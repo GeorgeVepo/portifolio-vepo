@@ -11,11 +11,6 @@ export class NavbarComponent implements OnInit {
   constructor() {
    }
 
-  @HostListener('window:scroll') onscroll() {
-    new Util().scrollResize('navbar', 100, 100, 40);
-  }
-
-
   ngOnInit() {
   }
 

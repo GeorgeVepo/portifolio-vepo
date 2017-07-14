@@ -1,9 +1,19 @@
 
+.navbar-top{
+  background-color: #222 !important;
+}
 
 .navbar{
-  position: fixed;
-  height: 100px;
+  position: absolute;
+  height: 35%;
    width: 100%;
    top: 0;
-  transition: height 1s;
+   z-index: -1;
+  background-color: #33363b;
 }
+
+.image-signature{
+  margin-left: 5%;
+  margin-top: 2%;  
+}
+    
