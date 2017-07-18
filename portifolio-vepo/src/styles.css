@@ -1,5 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-    height: 1000px;
-    background-color: #d4d4d4;
+.background-default-color{
+     background-color: #d4d4d4;
+
+}
+
+.no-padding{
+    padding: 0px;
+}
+
+.no-border{
+    border: none;
 }

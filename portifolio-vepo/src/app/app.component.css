@@ -2,21 +2,17 @@
     margin-top: 15%;
 }
 
-.home-painel{
-    border: none;
-}
-
 .home-painel-heading{
     padding: 0px !important;
 }
 
 .nav-tabs-home{
-    background-color: black !important;
+    background-color: #222 !important;
 }
 
 .nav-tabs-home a{
     color: #adacac !important;
-    background-color: black;
+    background-color: #222;
 }
 
 .painel-title{
@@ -28,4 +24,13 @@
     margin-bottom: 20px;
     border: 0;
     border-top: 2px solid #eee;
+}
+
+.social-media-icons{
+    height: 20px;
+
+}
+
+.painel-size{
+    width: 86%;
 }
