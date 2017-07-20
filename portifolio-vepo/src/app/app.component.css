@@ -1,5 +1,6 @@
-.body-margin{
+.main-painel-margin{
     margin-top: 15%;
+    margin-bottom: 5%;
 }
 
 .home-painel-heading{
@@ -33,4 +34,14 @@
 
 .painel-size{
     width: 86%;
+}
+
+@media (min-width: 1140px){
+    .recent-post-text{
+        float: left;
+    }
+}
+
+.painel-popular-posts-body{
+    min-height: 400px;
 }
