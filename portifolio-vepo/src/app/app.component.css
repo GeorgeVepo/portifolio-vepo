@@ -112,6 +112,10 @@ float: left;
     float: left;
 }
 
+.painel-popular-posts-body p{
+    padding-left: 34%;
+}
+
 
 .popular-posts {
     width: 25% !important;
