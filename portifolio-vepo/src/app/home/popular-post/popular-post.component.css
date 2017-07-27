@@ -1,0 +1,32 @@
+
+.painel-popular-posts-body{
+   height: 90%;
+}
+
+
+.painel-popular-posts-body img{
+    width: 30%;
+    float: left;
+}
+
+.painel-popular-posts-body p{
+    padding-left: 34%;
+}
+
+.popular-posts {
+    width: 25% !important;
+    height: 1300px;
+ }
+
+
+@media (max-width: 1300px){
+.popular-posts {
+    display: none;
+    }
+}
+
+
+.social-media-icons{
+    height: 20px;
+
+}

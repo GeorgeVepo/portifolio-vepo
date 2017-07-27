@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './common/navbar/navbar.component';
 import { FooterComponent } from './common/footer/footer.component';
+import { HomeModule } from "app/home/home.module";
+
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { FooterComponent } from './common/footer/footer.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
