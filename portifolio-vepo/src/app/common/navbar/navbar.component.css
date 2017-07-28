@@ -12,8 +12,45 @@
   background-color: #33363b;
 }
 
-.image-signature{
-  margin-left: 5%;
-  margin-top: 2%;  
+
+
+.apresentation-text{
+  float: left;
+  margin-top: 3%;
+  margin-left: 10%;
+  color: #FFF;  
+}
+
+img {
+      width: 35%;
+    float: right;
+    margin-top: 2%;
+    margin-right: 25%;
+}
+
+h5{
+  font-size: 40px;
+}
+
+h6{
+  font-size: 30px;
+}
+
+.carousel{
+    float: right;
+    margin-top: 1.5%;
+    margin-right: 4%;
+}
+
+.carousel-control {
+  left: 20%;
+}
+
+.carousel-control.right {
+    left: 78%;
+}
+
+.carousel-control {
+background-image: none;
 }
 

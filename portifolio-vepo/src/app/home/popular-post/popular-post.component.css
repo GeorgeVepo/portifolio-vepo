@@ -1,21 +1,11 @@
 
 .painel-popular-posts-body{
-   height: 90%;
-}
-
-
-.painel-popular-posts-body img{
-    width: 30%;
-    float: left;
-}
-
-.painel-popular-posts-body p{
-    padding-left: 34%;
+    height: 500px;
+    overflow: scroll;
 }
 
 .popular-posts {
     width: 25% !important;
-    height: 1300px;
  }
 
 
