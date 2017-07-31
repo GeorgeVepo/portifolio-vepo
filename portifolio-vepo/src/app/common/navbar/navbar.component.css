@@ -26,6 +26,7 @@ img {
     float: right;
     margin-top: 2%;
     margin-right: 25%;
+    height: 30%;
 }
 
 h5{
@@ -35,15 +36,35 @@ h5{
 h6{
   font-size: 30px;
 }
+    /*  */
 
 .carousel{
     float: right;
-    margin-top: 1.5%;
-    margin-right: 4%;
+    margin-right: 3%;
 }
 
+#imagem-angular{
+  margin-top: 4%;
+}
+
+#imagem-jsf{
+  width: 12%;
+  margin-right: 43%;
+}
+
+#imagem-java{
+  width: 25%;
+  margin-right: 30%;
+  margin-top: 0px;
+}
 .carousel-control {
   left: 20%;
+  top: 110px;
+  bottom: initial;
+}
+
+.carousel-inner{
+height: 250px;
 }
 
 .carousel-control.right {
@@ -53,4 +74,3 @@ h6{
 .carousel-control {
 background-image: none;
 }
-
