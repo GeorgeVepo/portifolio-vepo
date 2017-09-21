@@ -35,6 +35,12 @@ img {
   width: 100%;
 }
 
+@media (max-width: 1700px){
+.item{
+  top: 40px !important;
+}
+}
+
 h5{
   font-size: 40px;
 }
@@ -50,13 +56,19 @@ h6{
     width: 55%;
 }
 
+@media (max-width: 1400px){
+.carousel{
+  display: none;
+}
+}
+
  #imagem-angular{
   margin-top: 4%;
 }
 
 #imagem-jsf{
-  width: 12%;
-  margin-right: 43%;
+  width: 50%;
+  margin-right: 18%;
 }
 
 #imagem-java{
@@ -81,4 +93,25 @@ height: 250px;
 
 .carousel-control {
 background-image: none;
+}
+
+.text-projetos {
+  color: white;
+    right: 32%;
+    font-size: 24px;
+    position: absolute;
+}
+
+@media (max-width: 1600px){
+.text-projetos{
+  right: 29%;
+  font-size: 24px;
+  position: absolute;
+}
+}
+
+@media (max-width: 1400px){
+.text-projetos{
+  display: none;
+}
 }
