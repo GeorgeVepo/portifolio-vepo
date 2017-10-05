@@ -11,8 +11,6 @@
   background-color: #33363b;
 }
 
-
-
 .apresentation-text{
   float: left;
   margin-top: 3%;
@@ -40,37 +38,6 @@ h6{
 }
     /*  */
 
-.carousel{
-    float: right;
-    margin-right: 3%;
-    width: 55%;
-}
-
-@media (max-width: 1400px){
-.carousel{
-  display: none;
-}
-}
-
-
-.carousel-control {
-  left: 20%;
-  top: 110px;
-  bottom: initial;
-}
-
-.carousel-inner{
-height: 250px;
-}
-
-.carousel-control.right {
-    left: 78%;
-}
-
-.carousel-control {
-background-image: none;
-}
-
 .text-projetos {
   color: white;
     right: 32%;
@@ -90,4 +57,25 @@ background-image: none;
 .text-projetos{
   display: none;
 }
+}
+
+.anuncio{
+    width: 45%;
+    height: auto;
+    background: white;
+    display: grid;
+    float: right;
+    margin-right: 15%;
+    margin-top: 2%;
+}
+
+.anuncio img{
+    width: 50%;
+    margin-left: 23%;
+    padding: 3%;
+    height: auto;
+}
+
+h2{
+      font-size: 80px;
 }

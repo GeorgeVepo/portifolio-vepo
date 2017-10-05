@@ -17,14 +17,6 @@
 } 
 
 
-@media (min-width: 1300px){
-.main-post{
-  width: 75% !important;  
-  height: 32%;
-  padding-right: 0.5%;
-}
-}
-
 
 .imagem-main-posts {
 float: left;
@@ -54,7 +46,9 @@ float: left;
 }
 
 .main-post{
-  padding-right: 0px;
+  width: 75% !important;  
+  height: 32%;
+  padding-right: 0.5%;
 }
 }
 
