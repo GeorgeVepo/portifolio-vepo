@@ -8,12 +8,23 @@
   height: 500px;
    width: 100%;
    top: 0;
-  background-color: #33363b;
-  /* background-image: url(../../../resources/city.png);
-  background-position-y: 205px;
-  background-repeat-y: no-repeat;
-  background-size: 950px; */
+   z-index: -2;
 }
+
+#background{
+  background-image: url(../../../resources/background1.png);
+   background-color: #33363b;
+   height: 300%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  transition: top 3.2s;
+  z-index: -9999;
+  background-size: 1800px;
+  background-repeat: no-repeat;
+}
+
 
 h2{
   font-size: 70px;

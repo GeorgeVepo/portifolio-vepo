@@ -41,4 +41,12 @@
    }
 }
 
+.background{
+    position: absolute;
+    top: 470px;
+    height: 300%;
+    width: 300%;
+    background: #d4d4d4;
+    left: 0;
+}
 
