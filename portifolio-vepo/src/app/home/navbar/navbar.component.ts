@@ -14,7 +14,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     
   }
-    @HostListener('window:scroll') onscroll(){
+  
+  /*  @HostListener('window:scroll') onscroll(){
      this.parallax();
   }
   
@@ -26,6 +27,6 @@ parallax(){
 
         let $class = document.getElementById('background');
         $class.style.top =-(sTop*2.15)+'px';
-}
+}*/
 
 }

@@ -9,19 +9,17 @@
    width: 100%;
    top: 0;
    z-index: -2;
+   background-color: #33363b;
 }
 
 #background{
-  background-image: url(../../../resources/background1.png);
+  background-image: url(../../../resources/titleportifolio.png);
    background-color: #33363b;
    height: 300%;
-  top: 0;
-  left: 0;
-  position: fixed;
+   margin-left: 20%;
   width: 100%;
-  transition: top 3.2s;
   z-index: -9999;
-  background-size: 1800px;
+  background-size: 1090px;
   background-repeat: no-repeat;
 }
 
