@@ -12,7 +12,7 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   @HostListener('window:scroll') onscroll(){
-     new Util().scrollResize('footer', 100, 0, 40);
+     new Util().scrollResize('footer', 100, 0, 30);
   }
 
 

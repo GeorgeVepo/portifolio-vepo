@@ -6,6 +6,7 @@
 
 .popular-posts {
     width: 25% !important;
+    display:none;
  }
 
 .social-media-icons{

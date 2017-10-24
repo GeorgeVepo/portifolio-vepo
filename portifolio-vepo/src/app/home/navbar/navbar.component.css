@@ -13,13 +13,14 @@
 }
 
 #background{
-  background-image: url(../../../resources/titleportifolio.png);
+  background-image: url(../../../resources/titleportifolio4.png);
    background-color: #33363b;
-   height: 300%;
-   margin-left: 20%;
+   height: 100%;
+   margin-left: 2%;
+   margin-top: 0.18%;
   width: 100%;
   z-index: -9999;
-  background-size: 1090px;
+  background-size: 1860px;
   background-repeat: no-repeat;
 }
 
