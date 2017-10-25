@@ -7,7 +7,7 @@
 }
 
 .panel-primary{
-    top: 400px;
+    top: -40px;
 }
     
 
@@ -24,21 +24,8 @@
     border-bottom-color:#adacac; 
 }
 
-
 .painel-size{
-    width: 86%;
-}
-
-@media(max-width: 2000px){
-    .painel-size{
     width: 93%;
-}
-}
-
-@media(max-width: 1500px){
-   .painel-size{
-    width: 86%;
-   }
 }
 
 .background{
