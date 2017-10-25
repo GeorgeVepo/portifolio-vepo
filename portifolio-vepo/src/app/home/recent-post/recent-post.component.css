@@ -1,8 +1,9 @@
 
 
 .grid {
-	padding: 0px 20px 100px 20px;
+	padding: 0px 20px 0px 20px;
 	list-style: none;
+	min-height: 500px;
 }
 
 
@@ -15,4 +16,19 @@
 		width: 100%;
 		min-width: 300px;
 	}
+}
+
+.show-project{
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+   position: relative;
+}
+
+.hide-project{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+  position: absolute;
+
 }
