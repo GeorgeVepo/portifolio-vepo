@@ -1,20 +1,14 @@
 .grid {
-    padding: 0px 20px 0px 20px;
 	list-style: none;
-	min-height: 500px;
+    padding-left: 2%;
 }
 
-
-
-@media screen and (max-width: 31.5em) {
-	.grid {
-		padding: 10px 10px 100px 10px;
-	}
-	.grid li {
-		width: 100%;
-		min-width: 300px;
-	}
+@media (max-width: 800px){
+    .grid {
+    padding-left: 0%;
+    }
 }
+
 
 .show-project{
   visibility: visible;
@@ -28,7 +22,7 @@
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s linear;
   position: absolute;
-
+  width: 96%
 }
 
  #taskmanager.hide-project{
