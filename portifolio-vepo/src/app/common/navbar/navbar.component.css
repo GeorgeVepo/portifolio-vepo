@@ -4,8 +4,6 @@
 }
 
 .navbar{
-  position: absolute;
-  height: 500px;
    width: 100%;
    top: 0;
    z-index: -2;
@@ -13,17 +11,13 @@
 }
 
 #background{
-  background-image: url(../../../resources/titleportifolio4.png);
    background-color: #33363b;
-   height: 100%;
-   margin-left: 2%;
+   height: fit-content;
+   margin-left: 0%;
    margin-top: 0.18%;
   width: 100%;
   z-index: -9999;
-  background-size: 1860px;
-  background-repeat: no-repeat;
 }
-
 
 h2{
   font-size: 70px;
@@ -58,4 +52,8 @@ h6{
 
 .active{
   color: white;
+}
+
+img{
+  width: 100%;
 }

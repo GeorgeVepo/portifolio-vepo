@@ -5,16 +5,15 @@
 }
 
  figure img {
-	max-width: 800px;
 	display: block;
 	position: relative;
+	width: 100%;
 }
 
  figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 20px;
 	background: #222222;
 	color: #fff;
 }
@@ -78,9 +77,9 @@ figcaption a {
 
 li {
 	display: inline-block;
-	width: 830px;
+	width: 49%;
 	margin: 0;
-	padding: 20px;
+	padding: 0.5%;
 	text-align: left;
 	position: relative;
 }
