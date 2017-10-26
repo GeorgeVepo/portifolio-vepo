@@ -3,18 +3,22 @@ import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { ProjectComponent } from './project-list/project/project.component';
+import { MainPostComponent } from '../common/main-post/main-post.component';
 import { HomeComponent } from './home.component';
-import { ProjectListComponent } from './project-list/project-list.component';
+import { RecentPostComponent } from './recent-post/recent-post.component';
+import { PopularPostComponent } from './popular-post/popular-post.component';
+import { PostSelectionComponent } from './popular-post/post-selection/post-selection.component';
 
 @NgModule({
     imports: [
         CommonModule
     ],
     declarations:[
-        ProjectComponent,
+        MainPostComponent,
         HomeComponent,
-        ProjectListComponent
+        RecentPostComponent,
+        PopularPostComponent,
+        PostSelectionComponent
     ],
     exports: [
         HomeComponent

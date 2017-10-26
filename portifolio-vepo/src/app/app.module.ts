@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './common/navbar/navbar.component';
+import { NavbarComponent } from './home/navbar/navbar.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { HomeModule } from "app/home/home.module";
 
