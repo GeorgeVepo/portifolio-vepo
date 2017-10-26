@@ -10,6 +10,16 @@
         <li role="presentation"><a (click)="java()">Java</a></li>
         <li role="presentation"><a (click)="typescript()">Typescript</a></li>
       </ul>
+
+     <select class="form-control" id="selectFilter">
+         <option><a (click)="todos()">Todos</a></option>
+         <option><a (click)="angular()">Angular</a></option>
+         <option><a (click)="jsf()">JSF</a></option>
+         <option><a (click)="android()">Android</a></option>
+         <option><a (click)="java()">Java</a></option>
+         <option><a (click)="typescript()">Typescript</a></option>
+    </select>
+
     </div>
     
     <app-project-list></app-project-list>

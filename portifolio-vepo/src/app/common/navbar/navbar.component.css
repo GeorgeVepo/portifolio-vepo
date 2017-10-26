@@ -54,6 +54,29 @@ h6{
   color: white;
 }
 
-img{
+.title{
   width: 100%;
+}
+
+.small-title{
+  display: none;
+  width: 100%;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-top: -15%;
+  margin-bottom: -3%;
+}
+
+@media (max-width: 767px){
+.navbar-brand-other{
+  display: none;
+}
+
+.small-title{
+  display: block;
+}
+
+.title{
+  display: none;
+}
 }

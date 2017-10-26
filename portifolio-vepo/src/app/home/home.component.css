@@ -28,5 +28,37 @@
     width: 93%;
 }
 
+select {
+	display: none;
+    width: 125px;
+    color: #fff;
+    background-color: #222;
+}
 
+.panel-heading{
+    background-color: #222 !important
+}
+
+@media (max-width: 550px){
+    select {
+	    display: block;
+	}
+
+    .nav{
+       display: none; 
+    }
+
+}
+
+
+@media (max-width: 800px){
+    .body-margin {
+	    width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+}
 
