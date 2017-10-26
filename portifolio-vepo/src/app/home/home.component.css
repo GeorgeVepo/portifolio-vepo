@@ -1,0 +1,32 @@
+.main-painel-margin{
+    margin-bottom: 13%;
+}
+
+.home-painel-heading{
+    padding: 0px !important;
+}
+
+.panel-primary{
+    top: -40px;
+}
+    
+
+.nav-tabs-home{
+    background-color: #222 !important;
+}
+
+.nav-tabs-home a{
+    color: #adacac !important;
+    background-color: #222;
+}
+
+.painel-title{
+    border-bottom-color:#adacac; 
+}
+
+.painel-size{
+    width: 93%;
+}
+
+
+
