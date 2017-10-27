@@ -3,21 +3,21 @@
 
     <div class="panel-heading home-painel-heading">
       <ul class="nav nav-tabs nav-tabs-home no-border">
-        <li role="presentation" class="active"><a (click)="todos()">Todos</a></li>
-        <li role="presentation"><a (click)="angular()">Angular</a></li>
-        <li role="presentation"><a (click)="jsf()">JSF</a></li>
-        <li role="presentation"><a (click)="android()">Android</a></li>
-        <li role="presentation"><a (click)="java()">Java</a></li>
-        <li role="presentation"><a (click)="typescript()">Typescript</a></li>
+        <li id="botao-todos" role="presentation" class="active"><a (click)="filtrarProjetos('botao-todos')">Todos</a></li>
+        <li id="botao-angular" role="presentation"><a (click)="filtrarProjetos('botao-angular')">Angular</a></li>
+        <li id="botao-jsf" role="presentation"><a (click)="filtrarProjetos('botao-jsf')">JSF</a></li>
+        <li id="botao-android" role="presentation"><a (click)="filtrarProjetos('botao-android')">Android</a></li>
+        <li id="botao-java" role="presentation"><a (click)="filtrarProjetos('botao-java')">Java</a></li>
+        <li id="botao-typescript" role="presentation"><a (click)="filtrarProjetos('botao-typescript')">Typescript</a></li>
       </ul>
 
      <select class="form-control" id="selectFilter">
-         <option><a (click)="todos()">Todos</a></option>
-         <option><a (click)="angular()">Angular</a></option>
-         <option><a (click)="jsf()">JSF</a></option>
-         <option><a (click)="android()">Android</a></option>
-         <option><a (click)="java()">Java</a></option>
-         <option><a (click)="typescript()">Typescript</a></option>
+         <option><a (click)="filtrarProjetos('')">Todos</a></option>
+         <option><a (click)="filtrarProjetos('')">Angular</a></option>
+         <option><a (click)="filtrarProjetos('')">JSF</a></option>
+         <option><a (click)="filtrarProjetos('')">Android</a></option>
+         <option><a (click)="filtrarProjetos('')">Java</a></option>
+         <option><a (click)="filtrarProjetos('')">Typescript</a></option>
     </select>
 
     </div>

@@ -12,36 +12,33 @@ export class ProjectListComponent implements OnInit {
   ngOnInit() {
   }
 
-  
-todos(){
-    document.getElementById("taskmanager").setAttribute("class", "show-project");
-    document.getElementById("portifolio").setAttribute("class", "show-project");
+  filtrarProjetos(id){
+    switch(id) {
+      case "botao-todos":
+          document.getElementById("taskmanager").setAttribute("class", "show-project");
+          document.getElementById("portifolio").setAttribute("class", "show-project");
+          break;
+      case "botao-angular":
+          document.getElementById("taskmanager").setAttribute("class", "hide-project");
+          document.getElementById("portifolio").setAttribute("class", "show-project");
+          break;
+      case "botao-jsf":
+          document.getElementById("taskmanager").setAttribute("class", "show-project");
+          document.getElementById("portifolio").setAttribute("class", "hide-project");
+          break;
+      case "botao-android":
+          document.getElementById("taskmanager").setAttribute("class", "hide-project");
+          document.getElementById("portifolio").setAttribute("class", "hide-project");
+          break;
+      case "botao-java":
+          document.getElementById("taskmanager").setAttribute("class", "show-project");
+          document.getElementById("portifolio").setAttribute("class", "hide-project");
+          break;
+      case "botao-typescript":
+          document.getElementById("taskmanager").setAttribute("class", "hide-project");
+          document.getElementById("portifolio").setAttribute("class", "show-project");
+          break;
   }
 
-  angular(){
-    document.getElementById("taskmanager").setAttribute("class", "hide-project");
-    document.getElementById("portifolio").setAttribute("class", "show-project");
   }
-
-  jsf(){
-    document.getElementById("taskmanager").setAttribute("class", "show-project");
-    document.getElementById("portifolio").setAttribute("class", "hide-project");
-  }
-
-  android(){
-    document.getElementById("taskmanager").setAttribute("class", "hide-project");
-    document.getElementById("portifolio").setAttribute("class", "hide-project");
-  }
-
-  java(){
-    document.getElementById("taskmanager").setAttribute("class", "show-project");
-    document.getElementById("portifolio").setAttribute("class", "hide-project");
-  }
-
-  typescript(){
-    document.getElementById("taskmanager").setAttribute("class", "hide-project");
-    document.getElementById("portifolio").setAttribute("class", "show-project");
-  }
-
-
 }

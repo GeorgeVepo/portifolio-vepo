@@ -1,6 +1,3 @@
-.main-painel-margin{
-    margin-bottom: 13%;
-}
 
 .home-painel-heading{
     padding: 0px !important;
@@ -46,6 +43,13 @@ select {
 
     .nav{
        display: none; 
+    }
+
+}
+
+@media (max-width: 1700px){
+    .body-margin {
+	    width: 95%;
     }
 
 }

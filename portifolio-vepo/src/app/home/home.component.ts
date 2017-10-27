@@ -17,28 +17,25 @@ export class HomeComponent implements OnInit {
   }
 
 
-  todos(){
-    this.recentPostComponent.todos();
+  filtrarProjetos(id){
+    this.recentPostComponent.filtrarProjetos(id);
+    this.setActive(id);
+
   }
 
-  angular(){
-    this.recentPostComponent.angular();
-  }
+  setActive(id){
+    let elementList = document.getElementsByClassName("active");
 
-  jsf(){
-    this.recentPostComponent.jsf();
+    if(elementList.length > 0){
+    for(var i = 0; i <= elementList.length; i++){
+      if(!elementList[i]){
+        document.getElementById("botao-todos").setAttribute("class", "");
+      } else {
+        elementList[i].setAttribute("class", "");
+      }
+    }
   }
-
-  android(){
-    this.recentPostComponent.android();
-  }
-
-  java(){
-    this.recentPostComponent.java();
-  }
-
-  typescript(){
-    this.recentPostComponent.typescript();
+    document.getElementById(id).setAttribute("class", "active");
   }
 
 }
