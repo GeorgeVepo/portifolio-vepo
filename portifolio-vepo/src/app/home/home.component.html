@@ -1,7 +1,7 @@
 <div class="container body-margin painel-size main-painel-margin">
-  <div class="panel panel-primary no-padding no-border col-md-12">
+  <div id="home-panel" class="panel panel-primary no-padding no-border col-md-12">
 
-    <div class="panel-heading home-painel-heading">
+    <div id="panel-heading-projects" class="panel-heading home-painel-heading active-panel">
       <ul class="nav nav-tabs nav-tabs-home no-border">
         <li id="botao-todos" role="presentation" class="active"><a (click)="filtrarProjetos('botao-todos')">Todos</a></li>
         <li id="botao-angular" role="presentation"><a (click)="filtrarProjetos('botao-angular')">Angular</a></li>
@@ -21,9 +21,17 @@
     </select>
 
     </div>
+
+    <div id="panel-heading-contact" class="panel-heading">
+      <ul class="nav nav-tabs nav-tabs-home no-border">
+        <li id="projects" role="presentation"><a (click)="goHome('contact-button')">Projetos</a></li>
+        <li id="contact" role="presentation"  class="active"><a >Contato</a></li>
+      </ul>
+
+    </div>
     
-    <app-project-list></app-project-list>
-    
+    <app-project-list class="active-panel"></app-project-list>
+    <app-contact></app-contact>
   </div>
 </div>
 

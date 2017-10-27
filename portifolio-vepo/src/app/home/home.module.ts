@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { ProjectComponent } from './project-list/project/project.component';
 import { HomeComponent } from './home.component';
 import { ProjectListComponent } from './project-list/project-list.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
     imports: [
@@ -14,7 +15,9 @@ import { ProjectListComponent } from './project-list/project-list.component';
     declarations:[
         ProjectComponent,
         HomeComponent,
-        ProjectListComponent
+        ProjectListComponent,
+        ContactComponent,
+        ContactComponent
     ],
     exports: [
         HomeComponent

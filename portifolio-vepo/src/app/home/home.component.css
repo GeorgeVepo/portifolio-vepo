@@ -1,6 +1,10 @@
 
-.home-painel-heading{
-    padding: 0px !important;
+app-project-list {
+    display: none;
+}
+
+app-contact{
+    display: none;
 }
 
 .panel-primary{
@@ -33,7 +37,9 @@ select {
 }
 
 .panel-heading{
-    background-color: #222 !important
+    background-color: #222 !important;
+    display: none;
+    padding: 0px !important;
 }
 
 @media (max-width: 550px){
@@ -66,3 +72,14 @@ select {
 
 }
 
+#painel-heading-contact{
+    display: none;
+}
+
+#home-panel{
+    transition: top 2s;
+}
+
+.active-panel{
+    display: block;
+}
