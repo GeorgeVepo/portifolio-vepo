@@ -29,9 +29,19 @@
       </ul>
 
     </div>
+
+     <div id="panel-heading-exp" class="panel-heading">
+      <ul class="nav nav-tabs nav-tabs-home no-border">
+        <li id="projects" role="presentation"><a (click)="goHome()">Projetos</a></li>
+        <li id="expProfissionais" role="presentation"  class="active"><a >Experiências Profissionais</a></li>
+      </ul>
+
+    </div>
+    
     
     <app-project-list class="active-panel"></app-project-list>
     <app-contact></app-contact>
+    <app-exp-profissionais></app-exp-profissionais>
   </div>
 </div>
 

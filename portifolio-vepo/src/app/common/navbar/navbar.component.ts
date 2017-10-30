@@ -33,6 +33,12 @@ export class NavbarComponent implements OnInit {
     this.desactiveAllButton();
     document.getElementById("home-button").setAttribute("class", "navbar-brand active");
   }
+
+  setExpPanel(){
+    this.desactiveAllButton();
+    document.getElementById("prof-exp-button").setAttribute("class", "navbar-brand navbar-brand-other active");
+    this.homeComponent.setExpPanel();
+  }
   
   desactiveAllButton(){
           document.getElementById("home-button").setAttribute("class", "navbar-brand");

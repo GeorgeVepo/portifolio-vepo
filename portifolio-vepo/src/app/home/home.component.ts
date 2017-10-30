@@ -63,11 +63,21 @@ export class HomeComponent implements OnInit {
     
   }
 
+  setExpPanel(){
+    this.desactiveAllPanel();
+        document.getElementById("home-panel").style.top = "-200px";
+        document.getElementById("panel-heading-exp").setAttribute("class", "panel-heading active-panel");
+        document.getElementsByTagName("app-exp-profissionais").item(0).setAttribute("class", "active-panel");
+    
+  }
+
   desactiveAllPanel(){
       document.getElementById("panel-heading-projects").setAttribute("class", "panel-heading home-painel-heading");
       document.getElementsByTagName("app-project-list").item(0).setAttribute("class", "");
       document.getElementById("panel-heading-contact").setAttribute("class", "panel-heading");
       document.getElementsByTagName("app-contact").item(0).setAttribute("class", "");
+      document.getElementById("panel-heading-exp").setAttribute("class", "panel-heading");
+      document.getElementsByTagName("app-exp-profissionais").item(0).setAttribute("class", "");
         
   }
 

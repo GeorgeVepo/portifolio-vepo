@@ -7,6 +7,7 @@ import { ProjectComponent } from './project-list/project/project.component';
 import { HomeComponent } from './home.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ContactComponent } from './contact/contact.component';
+import { ExpProfissionaisComponent } from './exp-profissionais/exp-profissionais.component';
 
 @NgModule({
     imports: [
@@ -17,7 +18,8 @@ import { ContactComponent } from './contact/contact.component';
         HomeComponent,
         ProjectListComponent,
         ContactComponent,
-        ContactComponent
+        ContactComponent,
+        ExpProfissionaisComponent
     ],
     exports: [
         HomeComponent
