@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectListComponent } from '../home/project-list/project-list.component';
+import { NavbarComponent } from '../common/navbar/navbar.component';
 
 @Component({
   selector: 'app-home',
@@ -11,9 +12,11 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
    recentPostComponent: ProjectListComponent;
+   navbarComponent: NavbarComponent;
 
   ngOnInit() {
     this.recentPostComponent = new ProjectListComponent();
+    this.navbarComponent = new NavbarComponent();
   }
 
 
@@ -36,41 +39,36 @@ export class HomeComponent implements OnInit {
     document.getElementById(id).setAttribute("class", "active");
   }
 
-  setContactPanel(idLastActive){
+  setContactPanel(){
 
-     this.desactiveLastPanel(idLastActive);
+    this.desactiveAllPanel();
       
     document.getElementById("home-panel").style.top = "-200px";
     document.getElementById("panel-heading-contact").setAttribute("class", "panel-heading active-panel");
     document.getElementsByTagName("app-contact").item(0).setAttribute("class", "active-panel");
   }
 
-  goHome(idLastActive){
-
-    this.desactiveLastPanel(idLastActive);
-
-    document.getElementById("home-panel").style.top = "-40px";
-    document.getElementById("panel-heading-projects").setAttribute("class", "panel-heading home-painel-heading active-panel");
-    document.getElementsByTagName("app-project-list").item(0).setAttribute("class", "active-panel");
+  setHomeNavbar(){
+    this.navbarComponent.goHome();
 
   }
 
-  desactiveLastPanel(idLastActive){
-  switch(idLastActive) {
-      case "home-button":
-          document.getElementById("panel-heading-projects").setAttribute("class", "panel-heading home-painel-heading");
-          document.getElementsByTagName("app-project-list").item(0).setAttribute("class", "");
-         
-          break;
-      case "prof-exp-button":
-          break;
-      case "about-me-button":
-          break;
-      case "contact-button":
-          document.getElementById("panel-heading-contact").setAttribute("class", "panel-heading");
-          document.getElementsByTagName("app-contact").item(0).setAttribute("class", "");
-          break; 
-        }
+  goHome(){
+    this.desactiveAllPanel();
+        document.getElementById("home-panel").style.top = "-40px";
+        document.getElementById("panel-heading-projects").setAttribute("class", "panel-heading home-painel-heading active-panel");
+        document.getElementsByTagName("app-project-list").item(0).setAttribute("class", "active-panel");
+
+    this.setHomeNavbar();
+    
+  }
+
+  desactiveAllPanel(){
+      document.getElementById("panel-heading-projects").setAttribute("class", "panel-heading home-painel-heading");
+      document.getElementsByTagName("app-project-list").item(0).setAttribute("class", "");
+      document.getElementById("panel-heading-contact").setAttribute("class", "panel-heading");
+      document.getElementsByTagName("app-contact").item(0).setAttribute("class", "");
+        
   }
 
 }

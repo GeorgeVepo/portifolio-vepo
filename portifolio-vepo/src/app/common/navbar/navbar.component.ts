@@ -19,32 +19,30 @@ export class NavbarComponent implements OnInit {
   }
   
   setContactPanel(){
-    let lastActivateButtonId = this.desactivateButton();
-    this.homeComponent.setContactPanel(lastActivateButtonId);
+    this.desactiveAllButton();
     document.getElementById("contact-button").setAttribute("class", "navbar-brand navbar-brand-other contact active");
+    this.homeComponent.setContactPanel();
+  }
+
+  setHomePanel(){
+    this.goHome();
+    this.homeComponent.goHome();
+  }
+
+  goHome(){
+    this.desactiveAllButton();
+    document.getElementById("home-button").setAttribute("class", "navbar-brand active");
   }
   
-  desactivateButton(): string{
-    let elementList = document.getElementsByClassName("active");
-    
-    for(var i = 0; i <= elementList.length; i++){
-      if(elementList[i]){
-        switch(elementList[i].id) {
-      case "home-button":
+  desactiveAllButton(){
           document.getElementById("home-button").setAttribute("class", "navbar-brand");
-          return "home-button";
-      case "prof-exp-button":
+       
           document.getElementById("prof-exp-button").setAttribute("class", "navbar-brand navbar-brand-other");
-          return "prof-exp-button";
-      case "about-me-button":
+
           document.getElementById("about-me-button").setAttribute("class", "navbar-brand navbar-brand-other");
-           return "about-me-button";
-      case "contact-button":
+  
           document.getElementById("contact-button").setAttribute("class", "navbar-brand navbar-brand-other contact");
-          return "contact-button";
-        }
-      }
-    }
+
   }
 
 }
