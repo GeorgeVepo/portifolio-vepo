@@ -21,7 +21,7 @@
 
  figcaption h1 {
 	margin: 0;
-	padding: 0;
+	padding: 4%;
 	color: #5ea8e2;
 }
 
@@ -98,3 +98,6 @@ li {
 }
 
 
+p{
+	padding-left: 4%;
+}
