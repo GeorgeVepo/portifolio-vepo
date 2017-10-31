@@ -11,8 +11,8 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-   recentPostComponent: ProjectListComponent;
-   navbarComponent: NavbarComponent;
+  recentPostComponent: ProjectListComponent;
+  navbarComponent: NavbarComponent;
 
   ngOnInit() {
     this.recentPostComponent = new ProjectListComponent();
@@ -20,65 +20,75 @@ export class HomeComponent implements OnInit {
   }
 
 
-  filtrarProjetos(id){
+  filtrarProjetos(id) {
     this.recentPostComponent.filtrarProjetos(id);
     this.setActive(id);
 
   }
 
-  setActive(id){
+  setActive(id) {
     let elementList = document.getElementsByClassName("active");
 
- 
-    for(var i = 0; i <= elementList.length; i++){
+
+    for (var i = 0; i <= elementList.length; i++) {
       if (elementList[i].id != "home-button") {
         elementList[i].setAttribute("class", "");
       }
     }
-  
+
     document.getElementById(id).setAttribute("class", "active");
   }
 
-  setContactPanel(){
+  setContactPanel() {
 
     this.desactiveAllPanel();
-      
+
     document.getElementById("home-panel").style.top = "-200px";
     document.getElementById("panel-heading-contact").setAttribute("class", "panel-heading active-panel");
     document.getElementsByTagName("app-contact").item(0).setAttribute("class", "active-panel");
   }
 
-  setHomeNavbar(){
+  setHomeNavbar() {
     this.navbarComponent.goHome();
 
   }
 
-  goHome(){
+  goHome() {
     this.desactiveAllPanel();
-        document.getElementById("home-panel").style.top = "-40px";
-        document.getElementById("panel-heading-projects").setAttribute("class", "panel-heading home-painel-heading active-panel");
-        document.getElementsByTagName("app-project-list").item(0).setAttribute("class", "active-panel");
+    document.getElementById("home-panel").style.top = "-40px";
+    document.getElementById("panel-heading-projects").setAttribute("class", "panel-heading home-painel-heading active-panel");
+    document.getElementsByTagName("app-project-list").item(0).setAttribute("class", "active-panel");
 
     this.setHomeNavbar();
-    
+
   }
 
-  setExpPanel(){
+  setExpPanel() {
     this.desactiveAllPanel();
-        document.getElementById("home-panel").style.top = "-200px";
-        document.getElementById("panel-heading-exp").setAttribute("class", "panel-heading active-panel");
-        document.getElementsByTagName("app-exp-profissionais").item(0).setAttribute("class", "active-panel");
-    
+    document.getElementById("home-panel").style.top = "-200px";
+    document.getElementById("panel-heading-exp").setAttribute("class", "panel-heading active-panel");
+    document.getElementsByTagName("app-exp-profissionais").item(0).setAttribute("class", "active-panel");
+
   }
 
-  desactiveAllPanel(){
-      document.getElementById("panel-heading-projects").setAttribute("class", "panel-heading home-painel-heading");
-      document.getElementsByTagName("app-project-list").item(0).setAttribute("class", "");
-      document.getElementById("panel-heading-contact").setAttribute("class", "panel-heading");
-      document.getElementsByTagName("app-contact").item(0).setAttribute("class", "");
-      document.getElementById("panel-heading-exp").setAttribute("class", "panel-heading");
-      document.getElementsByTagName("app-exp-profissionais").item(0).setAttribute("class", "");
-        
+  setAboutMe() {
+    this.desactiveAllPanel();
+    document.getElementById("home-panel").style.top = "-200px";
+    document.getElementById("panel-heading-about-me").setAttribute("class", "panel-heading active-panel");
+    document.getElementsByTagName("app-about-me").item(0).setAttribute("class", "active-panel");
+
+  }
+
+  desactiveAllPanel() {
+    document.getElementById("panel-heading-projects").setAttribute("class", "panel-heading home-painel-heading");
+    document.getElementsByTagName("app-project-list").item(0).setAttribute("class", "");
+    document.getElementById("panel-heading-contact").setAttribute("class", "panel-heading");
+    document.getElementsByTagName("app-contact").item(0).setAttribute("class", "");
+    document.getElementsByTagName("app-about-me").item(0).setAttribute("class", "");
+    document.getElementById("panel-heading-about-me").setAttribute("class", "panel-heading");
+    document.getElementById("panel-heading-exp").setAttribute("class", "panel-heading");
+    document.getElementsByTagName("app-exp-profissionais").item(0).setAttribute("class", "");
+
   }
 
 }

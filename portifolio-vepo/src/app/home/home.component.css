@@ -11,6 +11,10 @@ app-exp-profissionais{
     display: none;
 }
 
+app-about-me{
+    display: none;
+}
+
 .panel-primary{
     top: -40px;
 }
@@ -74,10 +78,6 @@ select {
         margin-left: 0;
     }
 
-}
-
-#painel-heading-contact{
-    display: none;
 }
 
 #home-panel{

@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-beta.28.3",
+    "version": "^2.3.1",
     "name": "base-angular"
   },
   "apps": [

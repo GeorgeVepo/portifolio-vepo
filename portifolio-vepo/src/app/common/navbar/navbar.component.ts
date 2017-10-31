@@ -17,6 +17,11 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.homeComponent = new HomeComponent();
   }
+
+  goHome(){
+    this.desactiveAllButton();
+    document.getElementById("home-button").setAttribute("class", "navbar-brand active");
+  }
   
   setContactPanel(){
     this.desactiveAllButton();
@@ -29,9 +34,10 @@ export class NavbarComponent implements OnInit {
     this.homeComponent.goHome();
   }
 
-  goHome(){
+  setAboutMe(){
     this.desactiveAllButton();
-    document.getElementById("home-button").setAttribute("class", "navbar-brand active");
+    document.getElementById("about-me-button").setAttribute("class", "navbar-brand navbar-brand-other active");
+    this.homeComponent.setAboutMe();
   }
 
   setExpPanel(){
