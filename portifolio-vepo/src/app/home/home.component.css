@@ -15,6 +15,10 @@ app-about-me{
     display: none;
 }
 
+app-project{
+    display: none;
+}
+
 .panel-primary{
     top: -40px;
 }
