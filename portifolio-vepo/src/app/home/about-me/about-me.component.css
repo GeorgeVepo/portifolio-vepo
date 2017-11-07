@@ -1,35 +1,17 @@
 .minhafoto{
-    width: 60%;
-    margin-left: 20%;
+    width: 95%;
     margin-top: 10%;
-}
-h2 {
-    margin-bottom: 1%;
-}
-
-.row{
-    margin-bottom: 5%;
-}
-
-.texto-1{
-     margin-left: -5%;
-}
-
-.texto-2{
-    margin-left: 10%;
 }
 
 .formatura{
-    width: 80%;
+    width: 98%;
     margin-top: 7%;
 }
 
-.col-md-6{
-    width: 53%;
-}
-
-.div-1{
-    margin-left: 3.8%;
+.col-md-10{
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 5%;
 }
 
    

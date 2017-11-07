@@ -18,10 +18,14 @@
 
 }
 
-.others{
+img.link-button{
     width: 2.5%;
     margin-left: 1.1%;
     margin-bottom: 0.3%;
     max-width: 30px;
     
+}
+
+a.link-button{
+    cursor:pointer;
 }

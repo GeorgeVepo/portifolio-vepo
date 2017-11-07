@@ -78,4 +78,16 @@ h6{
 .title{
   display: none;
 }
+
+.navbar-brand{
+  display: none;
+}
+}
+
+.navbar-toggle{
+  margin-right: -8px;
+}
+
+.navbar-collapse{
+  background: #222;
 }

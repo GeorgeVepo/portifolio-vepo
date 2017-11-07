@@ -22,7 +22,7 @@
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s linear;
   position: absolute;
-  width: 96%
+  width: 48%
 }
 
  #taskmanager.hide-project{

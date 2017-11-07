@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
 
 
     for (var i = 0; i <= elementList.length; i++) {
-      if (elementList[i].id != "home-button") {
+      if (elementList[i] && elementList[i].id != "home-button") {
         elementList[i].setAttribute("class", "");
       }
     }
@@ -49,7 +49,9 @@ export class HomeComponent implements OnInit {
   }
 
   setHomeNavbar() {
-    this.navbarComponent.goHome();
+    if(this.navbarComponent){
+      this.navbarComponent.goHome();
+    }
 
   }
 
