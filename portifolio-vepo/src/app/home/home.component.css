@@ -86,6 +86,17 @@ select {
 
 #home-panel{
     transition: top 2s;
+    top: -200px;
+}
+
+@media (max-width: 500px){
+    #home-panel{
+        top: -100px;
+    }
+}
+
+.home{
+   top:-40px !important; 
 }
 
 .active-panel{

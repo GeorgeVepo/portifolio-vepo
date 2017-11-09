@@ -56,9 +56,6 @@ figure {
 	color: #5ea8e2;
 }
 
- figcaption span:before {
-	content: 'by ';
-}
 
  figcaption a {
 	text-align: center;
@@ -126,8 +123,22 @@ li {
 	width: 100%;
 	margin-bottom: 3%;
 	}
-}
 
+	.hide-project{
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0.5s, opacity 0.5s linear;
+		position: absolute;
+		width: 100%;
+		padding: 2%;
+	  }
+
+	  #taskmanager.hide-project{
+		left: 0;
+	  }
+	  
+
+}
 
 p{
 	padding-left: 4%;

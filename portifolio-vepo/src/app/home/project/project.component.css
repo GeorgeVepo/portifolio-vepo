@@ -14,7 +14,7 @@ h2{
     float: none;
 }
 
-.project-home-photo{
+img.project-home-photo{
     width: 100%;
 }
 
@@ -45,3 +45,18 @@ div.git-icon{
     margin-top: 3%;
 }
 
+div.project-home-photo{
+    padding-bottom: 8%;
+}
+
+@media (max-width: 1000px){
+    .mobile-version-photo{
+        padding-top: 5%;
+    }
+
+    .mobile-div{
+        display: none;
+    }
+
+    
+}

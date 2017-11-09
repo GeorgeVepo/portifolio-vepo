@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
 
     this.desactiveAllPanel();
 
-    document.getElementById("home-panel").style.top = "-200px";
+    document.getElementById("home-panel").setAttribute("class", "panel panel-primary no-padding no-border col-md-12");
     document.getElementById("panel-heading-contact").setAttribute("class", "panel-heading active-panel");
     document.getElementsByTagName("app-contact").item(0).setAttribute("class", "active-panel");
   }
@@ -57,7 +57,7 @@ export class HomeComponent implements OnInit {
 
   goHome() {
     this.desactiveAllPanel();
-    document.getElementById("home-panel").style.top = "-40px";
+    document.getElementById("home-panel").setAttribute("class", "panel panel-primary no-padding no-border col-md-12 home");
     document.getElementById("panel-heading-projects").setAttribute("class", "panel-heading home-painel-heading active-panel");
     document.getElementsByTagName("app-project-list").item(0).setAttribute("class", "active-panel");
 
@@ -67,7 +67,7 @@ export class HomeComponent implements OnInit {
 
   setExpPanel() {
     this.desactiveAllPanel();
-    document.getElementById("home-panel").style.top = "-200px";
+    document.getElementById("home-panel").setAttribute("class", "panel panel-primary no-padding no-border col-md-12");
     document.getElementById("panel-heading-exp").setAttribute("class", "panel-heading active-panel");
     document.getElementsByTagName("app-exp-profissionais").item(0).setAttribute("class", "active-panel");
 
@@ -75,7 +75,7 @@ export class HomeComponent implements OnInit {
 
   setAboutMe() {
     this.desactiveAllPanel();
-    document.getElementById("home-panel").style.top = "-200px";
+    document.getElementById("home-panel").setAttribute("class", "panel panel-primary no-padding no-border col-md-12");
     document.getElementById("panel-heading-about-me").setAttribute("class", "panel-heading active-panel");
     document.getElementsByTagName("app-about-me").item(0).setAttribute("class", "active-panel");
 
@@ -83,7 +83,7 @@ export class HomeComponent implements OnInit {
 
   goToPortifolio(){
     this.desactiveAllPanel();
-    document.getElementById("home-panel").style.top = "-200px";
+    document.getElementById("home-panel").setAttribute("class", "panel panel-primary no-padding no-border col-md-12");
     document.getElementById("panel-heading-project").setAttribute("class", "panel-heading active-panel");
     document.getElementsByTagName("app-project").item(0).setAttribute("class", "active-panel");
   }

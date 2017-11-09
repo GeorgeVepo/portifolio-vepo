@@ -19,13 +19,17 @@ export class NavbarComponent implements OnInit {
   }
 
   goHome(){
-    this.desactiveAllButton();
+    this.desactiveAllMobileButtons();
+    this.desactiveAllNavbrandButton();
     document.getElementById("home-button").setAttribute("class", "navbar-brand active");
+    document.getElementById("home-mobile-button").setAttribute("class", " active");
   }
   
   setContactPanel(){
-    this.desactiveAllButton();
+    this.desactiveAllMobileButtons();
+    this.desactiveAllNavbrandButton();
     document.getElementById("contact-button").setAttribute("class", "navbar-brand navbar-brand-other contact active");
+    document.getElementById("contact-mobile-button").setAttribute("class", "active");
     this.homeComponent.setContactPanel();
   }
 
@@ -35,18 +39,31 @@ export class NavbarComponent implements OnInit {
   }
 
   setAboutMe(){
-    this.desactiveAllButton();
+    this.desactiveAllMobileButtons();
+    this.desactiveAllNavbrandButton();
     document.getElementById("about-me-button").setAttribute("class", "navbar-brand navbar-brand-other active");
+    document.getElementById("about-me-mobile-button").setAttribute("class", "active");
     this.homeComponent.setAboutMe();
   }
 
   setExpPanel(){
-    this.desactiveAllButton();
+    this.desactiveAllMobileButtons();
+    this.desactiveAllNavbrandButton();
     document.getElementById("prof-exp-button").setAttribute("class", "navbar-brand navbar-brand-other active");
+    document.getElementById("prof-exp-mobile-button").setAttribute("class", "active");
     this.homeComponent.setExpPanel();
   }
+
+  desactiveAllMobileButtons(){
+    var e = document.getElementsByClassName("active");
+    console.log(e.length);
+    if(e.length > 0){
+      e[0].setAttribute("class", "");
+    }
+    
+  }
   
-  desactiveAllButton(){
+  desactiveAllNavbrandButton(){
           document.getElementById("home-button").setAttribute("class", "navbar-brand");
        
           document.getElementById("prof-exp-button").setAttribute("class", "navbar-brand navbar-brand-other");

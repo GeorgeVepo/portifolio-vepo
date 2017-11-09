@@ -1,6 +1,7 @@
 .phone{
     width: 70%;
     margin: 3%;
+    min-width: 150px;
 }
 
 .whatsapp{
@@ -26,6 +27,29 @@ img.link-button{
     
 }
 
-a.link-button{
-    cursor:pointer;
+
+@media (max-width: 600px){
+    .col-xs-4{
+        display: none;
+    }
+
+    .col-xs-8{
+        width: 100%;
+    }
+
+    .whatsapp{
+        width: 20px;
+    }
+    
+    .email{
+        width: 20px;
+    
+    }
+    
+    img.link-button{
+        width: 20px;
+        
+    }
+    
+
 }

@@ -2,17 +2,19 @@
   <div class="container-fluid navbar-top">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-        <span class="icon-bar"><a  href="#"></a></span>
-        <span class="icon-bar"><a href="#"></a></span>
-        <span class="icon-bar"><a href="#"></a></span>
+    <div class="row">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
+    </div>
       <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a (click)="setHomePanel()">Home</a></li>
-            <li><a (click)="setExpPanel()">Experiências Profissionais</a></li>
-            <li><a (click)="setAboutMe()">Sobre mim</a></li> 
-            <li><a (click)="setContactPanel()">Contato</a></li> 
+            <li class="active" id="home-mobile-button"><a (click)="setHomePanel()">Home</a></li>
+            <li id="prof-exp-mobile-button"><a (click)="setExpPanel()">Experiências Profissionais</a></li>
+            <li id="about-me-mobile-button"><a (click)="setAboutMe()">Sobre mim</a></li> 
+            <li id="contact-mobile-button"><a (click)="setContactPanel()">Contato</a></li> 
           </ul>
           
         </div>
