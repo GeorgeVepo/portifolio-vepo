@@ -140,12 +140,24 @@ li {
 
 }
 
+@media (max-width: 400px){
+	h1{
+		font-size: 28px;
+	}
+}
+
 p{
 	padding-left: 4%;
 }
 
 @media (max-width: 500px){
 	p{
+		display: none;
+	}
+}
+
+@media (max-width: 330px){
+	h1{
 		display: none;
 	}
 }

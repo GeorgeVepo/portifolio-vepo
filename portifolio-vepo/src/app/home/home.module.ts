@@ -10,9 +10,11 @@ import { ExpProfissionaisComponent } from './exp-profissionais/exp-profissionais
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectComponent } from './project/project.component';
 
+import { BrowserModule } from '@angular/platform-browser';
+
 @NgModule({
     imports: [
-        CommonModule
+        BrowserModule, FormsModule
     ],
     declarations:[
         HomeComponent,

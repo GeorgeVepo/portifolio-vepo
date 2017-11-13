@@ -13,12 +13,21 @@ export class HomeComponent implements OnInit {
 
   recentPostComponent: ProjectListComponent;
   navbarComponent: NavbarComponent;
+  selectedFilter: String;
 
   ngOnInit() {
     this.recentPostComponent = new ProjectListComponent();
     this.navbarComponent = new NavbarComponent();
+    this.selectedFilter = "botao-todos";
   }
 
+  filtrarProjetosMobile(id) {
+    if(!id)
+    this.recentPostComponent.filtrarProjetos(this.selectedFilter);
+
+    this.recentPostComponent.filtrarProjetos(id);
+
+  }  
 
   filtrarProjetos(id) {
     this.recentPostComponent.filtrarProjetos(id);
@@ -101,5 +110,7 @@ export class HomeComponent implements OnInit {
     document.getElementsByTagName("app-project").item(0).setAttribute("class", "");
 
   }
+
+
 
 }

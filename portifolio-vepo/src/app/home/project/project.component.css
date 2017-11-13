@@ -60,3 +60,19 @@ div.project-home-photo{
 
     
 }
+
+@media (max-width: 400px){
+    img.git-icon{
+        display: none
+    }
+
+    a.git-icon{
+        font-size:12px;
+    }
+
+    
+}
+
+.panel-body{
+    margin-bottom: -26%;
+}
